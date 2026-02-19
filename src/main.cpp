@@ -2,8 +2,8 @@
 /**
  * @file main.cpp
  * @brief Embedded Distance Measurement using Ultrasonic Sensor
- * @author YOUR_NAME
- * @date YYYY-MM-DD
+ * @author AkshitaAg25
+ * @date 2026-02-19
  *
  * @details
  * Measures distance using HC-SR04 ultrasonic sensor
@@ -12,15 +12,19 @@
 
  // TODO 1:
  // Define TRIG pin (Use pin 9)
+int trigPin = 9;
 
  // TODO 2:
  // Define ECHO pin (Use pin 10)
+int echoPin = 10;
 
  // TODO 3:
  // Create variable to store duration
+long duration;
 
  // TODO 4:
  // Create variable to store calculated distance
+float distance;
 
 void setup() {
 
