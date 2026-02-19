@@ -30,34 +30,45 @@ void setup() {
 
     // TODO 5:
     // Initialize Serial communication (9600 baud rate)
-
+    Serial.begin(9600);
     // TODO 6:
     // Configure TRIG as OUTPUT
+    pinMode(trigPin, OUTPUT);
 
     // TODO 7:
     // Configure ECHO as INPUT
+    pinMode(echoPin, INPUT);
 
     // TODO 8:
     // Print system initialization message
+    Serial.println("Ultrasonic Distance Measurement Initialized");
 }
 
-void loop() {
-
-    // TODO 9:
-    // Set TRIG LOW for 2 microseconds
-
-    // TODO 10:
-    // Send 10 microsecond pulse on TRIG
-
-    // TODO 11:
-    // Measure pulse duration on ECHO using pulseIn()
-
-    // TODO 12:
-    // Calculate distance in cm
-
-    // TODO 13:
-    // Print calculated distance
-
-    // TODO 14:
-    // Add delay (500ms)
-}
+// void loop() {
+//
+//     // TODO 9:
+//     // Set TRIG LOW for 2 microseconds
+//     digitalWrite(trigPin, LOW);
+//
+//     // TODO 10:
+//     // Send 10 microsecond pulse on TRIG
+//     digitalWrite(trigPin, HIGH);
+//
+//     // TODO 11:
+//     // Measure pulse duration on ECHO using pulseIn()
+//     duration = pulseIn(echoPin, HIGH);
+//
+//     // TODO 12:
+//     // Calculate distance in cm
+//     distance = (duration * 0.034) / 2;
+//
+//     // TODO 13:
+//     // Print calculated distance
+//     Serial.print("Distance: ");
+//     Serial.print(distance);
+//     Serial.println(" cm");
+//
+//     // TODO 14:
+//     // Add delay (500ms)
+//     delay(500);
+// }
